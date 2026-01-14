@@ -1,0 +1,14 @@
+int soma(int a, int b) {
+    retorne a + b;
+}
+
+programa {
+    int resultado;
+    car c;
+    c = 'z';
+    
+    resultado = soma(5, c); /*ERRO:PARAMETRO DE CHAMADA (c)POSSUI TIPO DIFERENTE DO PARAMETRO FORMAL b */ 
+
+    escreva resultado;
+    novalinha;
+}
