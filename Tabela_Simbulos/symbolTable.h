@@ -30,6 +30,7 @@ void symtab_exit_scope(SymbolTableRef table);
 // Inserção
 int symtab_insert_var(SymbolTableRef table, const char* name, int type, int pos);
 int symtab_insert_func(SymbolTableRef table, const char* name, int num_params, int return_type);
+void sym_free_ref(SymbolRef symbol);
 
 // Busca e Getters
 SymbolRef symtab_lookup(SymbolTableRef table, const char* name);

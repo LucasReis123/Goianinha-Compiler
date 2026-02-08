@@ -247,7 +247,7 @@ int generate_expression(AST_Node *node) {
 
                 int offset_id = load_variable_address(node);
                 if (offset_id == -1) {
-                    return;
+                    return -1;
                 }
 
                 append_text("  lw $t0, %d($t1)\n", offset_id); 
@@ -321,7 +321,7 @@ int generate_expression(AST_Node *node) {
             
             int offset_atrib = load_variable_address(node);
             if (offset_atrib == -1) {
-                return;
+                return -1;
             }
             
             // Salva o valor no offset obtido

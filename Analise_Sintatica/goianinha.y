@@ -4,6 +4,8 @@
 #include <string.h>
 #include "./AST/ast.h"
 
+extern int yylex(void);
+
 // Declarações externas do analisador léxico
 extern int yylineno;
 
